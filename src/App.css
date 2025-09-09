@@ -40,3 +40,53 @@
 .read-the-docs {
   color: #888;
 }
+/* Container holding all profile cards */
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* space between cards */
+  padding: 20px;
+  background: #f5f6fa;
+}
+
+/* Individual profile card */
+.dp {
+  background: #817b7b;
+  border-radius: 12px;
+  padding: 16px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.dp:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Profile image */
+.dp img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* Name styling */
+.dp h1 {
+  font-size: 1.3rem;
+  margin: 10px 0 6px;
+  color: #333;
+}
+
+/* Description styling */
+.dp p {
+  font-size: 1rem;
+  color: #eeecec;
+  margin: 0;
+}
